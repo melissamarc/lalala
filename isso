@@ -1,0 +1,87 @@
+import './Dashboard.css';
+import React, { useState, useEffect } from 'react';
+import Sidebar from '../../components/sidebar/sidebar';
+import NavUser from '../../components/navUser/navUser';
+
+const Dashboard: React.FC = () => {
+  return (
+    <>
+      <div className="container-dash">
+        <div className="side"> <Sidebar /> </div>
+<div className="nav-u">
+  <NavUser/>
+</div>
+
+<div className="content-dash">
+  <div className="headerr">
+  <h1> Bem Vindo(a) de volta! Como você está? </h1>
+</div>
+<div className="user">
+  sessao usuario
+</div>
+</div>
+
+      </div>
+
+
+    
+    </>
+  );
+};
+
+export default Dashboard;
+
+
+
+
+
+
+
+.container-dash {
+  display: flex;
+  background-color: blueviolet;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headerr{
+  display: flex;
+  
+  margin-left: 15vh;
+  width: 70%;
+  height: 20%;
+  background-color: #0EAB65;
+  align-items: flex-end;
+  border-radius: 5vh;
+ 
+}
+
+.headerr h1{
+  display: flex;
+  margin-left: 5vh;
+  color: white;
+}
+
+.user{
+  background-color: white;
+  display: flex;
+  height: 98%;
+  width: 30%;
+  border-radius: 5vh;
+  margin-right: 3vh;  
+}
+
+.content-dash{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 2vh;
+gap: 2vh;
+  justify-content: space-between;
+ 
+ 
+}
